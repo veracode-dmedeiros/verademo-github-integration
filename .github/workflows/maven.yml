@@ -40,11 +40,11 @@ jobs:
       uses: veracode/veracode-uploadandscan-action@0.2.6
       with:
         # appname
-        appname: ${{ github.repository }}
+        appname: verademo-github-integration # ${{ github.repository }}
         # createprofile
         createprofile: true # default is true
         # filepath
-        filepath: '${{ github.workspace }}/app/target/verademo.war'
+        filepath: app/target/verademo.war #'${{ github.workspace }}/app/target/verademo.war'
         #/home/runner/work/verademo-github-integration/verademo-github-integration/app/target/verademo.war
         # version
         version: ${{ github.run_id }}-${{ github.run_number }}-${{ github.run_attempt }}
