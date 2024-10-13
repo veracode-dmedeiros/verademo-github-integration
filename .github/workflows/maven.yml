@@ -57,7 +57,7 @@ jobs:
         # name of the sandbox
         sandboxname: 'Release Candidate' # optional
         # wait X minutes for the scan to complete
-        scantimeout: # optional
+        scantimeout: 60 # optional
         # modules to exclude from module selection
         exclude: # optional
         # modules to include in module selection
@@ -83,7 +83,7 @@ jobs:
         # automatically delete the current scan if there are any errors when uploading files or starting the scan
         deleteincompletescan: # optional
         # Interval, in seconds, to poll for the status of a running scan. Value range is 30 to 120 (two minutes). Default is 120.
-        scanpollinginterval: 120 # optional
+        scanpollinginterval: # optional
         # specify version of the Java API Wrapper; default is latest
         javawrapperversion: # optional
         # show detailed diagnostic information, which you can use for debugging, in the output.
