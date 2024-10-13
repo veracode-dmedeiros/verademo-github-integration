@@ -45,8 +45,9 @@ jobs:
         createprofile: true # default is true
         # filepath
         filepath: '${{ github.workspace }}/app/target/verademo.war'
+        #/home/runner/work/verademo-github-integration/verademo-github-integration/app/target/verademo.war
         # version
-        version: # default is Scan from Github job: ${{ github.run_id }}-${{ github.run_number }}-${{ github.run_attempt }}
+        version: ${{ github.run_id }}-${{ github.run_number }}-${{ github.run_attempt }}
         # vid
         vid: ${{secrets.veracode_api_id }}
         # vkey
