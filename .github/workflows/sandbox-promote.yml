@@ -1,3 +1,5 @@
+name: Sandbox Promote
+
 on:
   workflow_dispatch:
 
