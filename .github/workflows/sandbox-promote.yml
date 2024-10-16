@@ -10,6 +10,9 @@ jobs:
   
     steps:
     - name: Veracode Profile Sandboxes Helper
+      env:
+          VERACODE_API_ID: '${{ secrets.VERACODE_API_ID }}'
+          VERACODE_API_SECRET: '${{ secrets.VERACODE_API_KEY }}'
       # You may pin to the exact commit or the version.
       # uses: veracode/veracode-sandboxes-helper@baa0a8458605b92d261b6b8f7801fa67fdce501b
       uses: veracode/veracode-sandboxes-helper@v1.0.0
