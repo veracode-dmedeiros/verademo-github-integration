@@ -106,4 +106,9 @@ jobs:
         include: # optional
         # Enable it, if artifact version 2 requires usage
         use_upgraded_version: # optional
-              
+
+job:
+  - name: SCA Agent
+      env: 
+        SRCCLR_API_TOKEN: eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NTM4ODExLCJleHAiOjE3NDI5OTg4MzQsImF1dGhvcml0aWVzIjoiQUdFTlQiLCJqdGkiOiI3ZTk1YmNjOC1lNWZhLTQ4MGQtODhkMy0wMGZjOTk2Nzc5NzQiLCJjbGllbnRfaWQiOiIiLCJzY29wZSI6W119.sB7tdwy728gnKlTZVWOviCQ5ix0AJfTo3qI229jVhsqKOe_IkYqUfFJo0xcAERQ1NXLjGl_u-QwuD576A0kNXOdNrMhpBntckaoAs4P7iwgnCkwUplz8KOeg3Q-Z2HxH0ps-ziAKb5mzXxlj3TYDHcxEe5U2ngLDs1WOa2Lolso
+      run: curl -sSL https://sca-downloads.veracode.com/ci.sh | sh srcclr scan --url https://github.com/veracode/example-ruby
